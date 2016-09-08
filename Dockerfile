@@ -1,6 +1,6 @@
 FROM registry.access.redhat.com/rhel7.2
 
-EXPOSE 8080 9001 9002
+EXPOSE 8080 9001 9002 9004
 
 USER root
 RUN yum --disablerepo=* --enablerepo=rhel-7-server-rpms install -y java-1.8.0-openjdk-headless && yum clean all && \
